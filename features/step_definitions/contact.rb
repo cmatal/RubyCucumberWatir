@@ -71,8 +71,7 @@ Then(/^the user is able to Delete the contact$/) do
   puts 'No more contacts are listed in the Default List'
 end
 
-And(/^the user logs out and closes the browser$/) do
+And(/^the user logs out$/) do
   browser.element(xpath: "//div[@id = 'adminLoggedIn']/img[@alt = 'open']").click
   browser.link(id: 'logout').click
-  browser.close
 end
