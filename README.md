@@ -4,8 +4,13 @@ FN_code_challenge
 Requirements:
 - chromedriver
 - ruby
-- bundler
+- bundler (to install the gems)
 
-Gems: (in Gemfile)
-- cucumber gem
-- watir gen
+Gems: (included in Gemfile)
+- cucumber (includes gherkin for BDD)
+- watir (includes selenium)
+
+To run the feature use the following command 
+from the project root folder:
+
+cucumber features/contact.feature
